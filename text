@@ -1,0 +1,27 @@
+cghs-ai-prototype/
+├─ README.md
+├─ requirements.txt
+├─ data/
+│  ├─ raw/
+│  │  └─ appointments_no_show.csv   # downloaded Kaggle dataset
+│  └─ processed/
+│     └─ appointments_clean.csv
+├─ notebooks/
+│  ├─ 01_exploratory_analysis.ipynb
+│  └─ 02_no_show_model_training.ipynb
+├─ src/
+│  ├─ __init__.py
+│  ├─ config.py
+│  ├─ data_utils.py
+│  ├─ model.py
+│  ├─ ocr_utils.py
+│  └─ validation_rules.py
+├─ models/
+│  └─ noshow_model.pkl            # saved trained model
+├─ app/
+│  ├─ app.py                      # main Streamlit app
+│  ├─ appointment_module.py
+│  └─ claims_module.py
+└─ docs/
+   ├─ problem_statement.md
+   └─ architecture_diagram.png
